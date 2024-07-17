@@ -1,4 +1,4 @@
-## VHEY - Chrome Extension
+## A Chrome Extension
 
 ### Installing and running
 
