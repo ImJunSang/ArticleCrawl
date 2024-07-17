@@ -1,0 +1,139 @@
+@import 'common.scss';
+
+$pagination-bg: #ffffffb8;
+$tooltip-max-width: 400px;
+$tooltip-padding-x: 0.25rem;
+$tooltip-padding-y: 0.25rem;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+#container {
+  padding: 0.5rem;
+  margin: 0.5rem;
+
+  height: 100%;
+
+  overflow: hidden;
+}
+
+#title-list-container {
+  @extend .shadow-sm;
+
+  background-color: #adfae1;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+#last-update {
+  font-size: 0.9rem;
+}
+
+.page {
+  @extend .flex-column;
+  @extend .justify-content-between;
+  @extend .w-100;
+}
+
+#chat-window {
+  @extend .shadow-sm;
+  @extend .p-2;
+  @extend .mb-1;
+  @extend .rounded;
+
+  width: 100%;
+  height: 350px;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.chat-message-left,
+.chat-message-right {
+  @extend .mb-4;
+
+  display: flex;
+  flex-shrink: 0;
+}
+
+.chat-message-left {
+  margin-right: auto;
+}
+
+.chat-message-right {
+  flex-direction: row-reverse;
+  margin-left: auto;
+}
+
+#chat-history {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.message-box {
+  @extend .flex-shrink-1;
+  @extend .bg-light;
+  @extend .rounded;
+  @extend .py-2;
+  @extend .px-3;
+  @extend .font-size-14;
+
+  max-width: 450px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-10 {
+  font-size: 10px;
+}
+
+.title-item-comp {
+  @extend .font-size-14;
+  @extend .text-truncate;
+  @extend .mb-2;
+  @extend .mt-1;
+}
+
+.title-item-title {
+  cursor: pointer;
+}
+
+.title-item-title:hover {
+  text-decoration: underline;
+}
+
+.title-item-channel {
+  cursor: pointer;
+}
+
+.title-item-channel:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  #visualization {
+    display: block;
+    text-align: center;
+  }
+  .vis-item {
+    display: inline-block;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 600px) {
+  #visualization {
+    display: flex;
+    justify-content: center;
+  }
+  .vis-item {
+    flex: 0 0 auto;
+    width: 50%;
+    max-width: 400px;
+  }
+}
