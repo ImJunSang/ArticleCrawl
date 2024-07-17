@@ -7,7 +7,7 @@ const sleep = (delay: number) => new Promise((resolve) => setTimeout(resolve, de
 
 document.getElementById('start-button').addEventListener('click', () => start());
 
-const URL_ENDPOINT = 'http://localhost:8000/api/article/url_to_update';
+const URL_ENDPOINT = 'http://localhost:8000/api/article/get_start';
 const UPDATE_ENDPOINT = 'http://localhost:8000/api/article/update';
 
 async function start() {
